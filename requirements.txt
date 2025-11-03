@@ -1,4 +1,2 @@
-yfinance
-alpaca-trade-api
-
-
+yfinance==0.2.28
+alpaca-trade-api==2.3.0
