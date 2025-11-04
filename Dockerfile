@@ -4,4 +4,5 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
 
-CMD ["python", "robot.py"]
+CMD ["python", "get_signal_alpaca_embedded.py"]
+
