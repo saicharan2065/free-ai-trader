@@ -27,7 +27,7 @@ ALPACA_API_SECRET = "JCXLrYaarzYDkLUG1ZJakgGySCuFni5tJgWSC37PXdUA"
 ALPACA_BASE_URL = "https://paper-api.alpaca.markets/v2"
 # =======================================================
 
-st.set_page_config(page_title="Free AI Trader — Timing & Expected Profit", layout="wide")
+st.set_page_config(page_title="Sai's Free AI Trader — Timing & Expected Profit", layout="wide")
 
 MODEL_DIR = "models"
 MODEL_FILE = os.path.join(MODEL_DIR, "logreg.pkl")
@@ -262,7 +262,7 @@ HELP_IFRAME_HTML = r"""
 """
 
 # ---------------- UI Controls ----------------
-st.title("Free AI Trader — Timing & Expected Profit")
+st.title("Sai's Free AI Trader — Timing & Expected Profit")
 st.markdown("Educational app. Suggestions show when to buy today and when to sell (today/tomorrow/or later) plus estimated profit %.")
 
 with st.sidebar:
@@ -534,5 +534,6 @@ components.html(HELP_IFRAME_HTML, height=400, scrolling=False)
 
 st.markdown("---")
 st.markdown("- Estimated profit uses historical positive/negative future returns where available; otherwise conservative fallback buffers are used. Test suggestions on Alpaca PAPER first.")
+
 
 
