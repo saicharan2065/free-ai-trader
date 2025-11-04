@@ -6,7 +6,7 @@ Free AI Trader — Full merged file
 - Highlighted entry/exit prices, suggested quantity, exit day, estimated profit %
 - Educational / paper-trading only. Test on Alpaca PAPER with Dry run before live trading.
 """
-
+import streamlit.components.v1 as components
 import os
 import time
 import pickle
@@ -530,7 +530,8 @@ if place_button:
                 st.info("No orders created (no actionable signals).")
 
 # Render help iframe overlay (height=400)
-st.components.v1.html(HELP_IFRAME_HTML, height=400, scrolling=False)
+components.html(HELP_IFRAME_HTML, height=400, scrolling=False)
 
 st.markdown("---")
 st.markdown("- Estimated profit uses historical positive/negative future returns where available; otherwise conservative fallback buffers are used. Test suggestions on Alpaca PAPER first.")
+
